@@ -149,14 +149,18 @@ body {
 
 
 #topics {
-    li {
+    a {
 	background-color: @main-color;
-	padding: 10px 10px 10px 10px;
-	border: 1px solid @white-color;
+	border: 0px;
+	border-radius: 0px;
+    }
+    a:hover {
+	background-color: @links-color;
+	color: @white-color;
     }
 
-    li:hover {
-	background-color: @links-color;
+    .active-link {
+	background-color:@links-color;
 	color: @white-color;
     }
 }
@@ -170,11 +174,6 @@ body {
     h4,h3 {
 	color:#0090B4;
     }
-}
-
-li#all-publications {
-    background-color:@links-color;
-    color: @white-color;
 }
 
 .news-item {
@@ -330,7 +329,7 @@ footer {
     }
 
     .icon {
-	margin: 0px 20px 0px 20px;
+	margin: 0px 10px;
     }
 }
 
@@ -350,7 +349,6 @@ footer {
     }
 
     .icon {
-	margin: 0px 20px 0px 20px;
 	width:70px;
 	height:70px;
 	display:block;
