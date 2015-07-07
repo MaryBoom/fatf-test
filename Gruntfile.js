@@ -3,9 +3,9 @@ module.exports = function(grunt) {
     grunt.initConfig({
 	pkg: grunt.file.readJSON('package.json'),
 
-	less:{
-	    compile:{
-		files:{
+	less: {
+	    compile: {
+		files: {
 		    'dist/<%= pkg.name %>.css' : 'src/less/site.less'
 		}
 	    }
@@ -32,13 +32,13 @@ module.exports = function(grunt) {
 		files: [
 		    {
 			expand: true,
-			cwd   :'src/',
+			cwd   : 'src/',
 			src   : 'index.html',
 			dest  : 'dist/'
 		    },
 		    {
 			expand: true,
-			cwd   :'src/',
+			cwd   : 'src/',
 			src   : 'img/*',
 			dest  : 'dist/'
 		    }
@@ -51,6 +51,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    grunt.registerTask('default', ['less', 'concat', 'uglify','copy']);
-
+    grunt.registerTask('default', ['less', 'concat', 'uglify', 'copy']);
 };
