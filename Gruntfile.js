@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 		separator: ';'
 	    },
 	    dist: {
-		src: ['src/**/*.js'],
+		src: ['src/js/jquery-1.11.3.js', 'src/js/*.js'],
 		dest: 'dist/<%= pkg.name %>.js'
 	    }
 	},
