@@ -1,0 +1,10 @@
+== Installation
+Run this after cloning the repo:
+{{{
+npm install
+}}}
+
+Run this to build the project:
+{{{
+grunt
+}}}
